@@ -110,6 +110,9 @@ export default class AppIntroSlider extends React.Component {
 
     return (
       <View style={styles.paginationContainer}>
+        {this.props.bottomButton && btn}
+        {this.props.bottomButton && skipBtn}
+
         <View style={styles.paginationDots}>
           {!this.props.bottomButton && skipBtn}
           {this.props.slides.length > 1 && this.props.slides.map((_, i) => (
@@ -123,8 +126,6 @@ export default class AppIntroSlider extends React.Component {
           ))}
           {!this.props.bottomButton && btn}
         </View>
-        {this.props.bottomButton && btn}
-        {this.props.bottomButton && skipBtn}
       </View>
     )
   }
