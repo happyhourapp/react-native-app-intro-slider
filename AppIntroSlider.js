@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
   },
   paginationContainer: {
     position: 'absolute',
-    bottom: 8 + (isIphoneX ? 18 : 0),
+    bottom: 0 + (isIphoneX ? 34 : 0),
     left: 0,
     right: 0,
   },
