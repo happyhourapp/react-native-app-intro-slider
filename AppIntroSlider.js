@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
     right: 0,
   },
   bottomButtonContainer: {
-    height: 44,
+    height: 60,
     marginHorizontal: 16,
   },
   bottomButton: {
