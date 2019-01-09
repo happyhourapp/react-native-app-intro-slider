@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
   },
   paginationContainer: {
     position: 'absolute',
-    bottom: 16 + (isIphoneX ? 34 : 0),
+    bottom: 36 + (isIphoneX ? 34 : 0),
     left: 0,
     right: 0,
   },
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
     right: 0,
   },
   bottomButtonContainer: {
-    height: 44,
+    height: 60,
     marginHorizontal: 16,
   },
   bottomButton: {
