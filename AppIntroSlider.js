@@ -9,6 +9,7 @@ import {
   Platform,
   StatusBar,
 } from 'react-native';
+import TouchableScale from 'react-native-touchable-scale';
 import DefaultSlide from './DefaultSlide';
 
 const { width, height } = Dimensions.get('window');
@@ -86,9 +87,9 @@ export default class AppIntroSlider extends React.Component {
     const style = (name === 'Skip' || name === 'Prev') ? styles.leftButtonContainer : styles.rightButtonContainer;
     return (
       <View style={this.props.bottomButton ? styles.bottomButtonContainer : style}>
-        <TouchableOpacity activeOpacity={0.7} onPress={onPress} style={this.props.bottomButton ? styles.flexOne : this.props.buttonStyle}>
+        <TouchableScale activeScale={0.9} tension={90} onPress={onPress} style={this.props.bottomButton ? styles.flexOne : this.props.buttonStyle}>
           {content}
-        </TouchableOpacity>
+        </TouchableScale>
       </View>
     )
   }
